@@ -1,0 +1,15 @@
+<p>Planes page</p>
+<ul>
+  <li>Callsign: {{model.callsign}}</li>
+  <li>Aircraft: {{model.aircraft.name}} {{model.aircraft.maxSpeed}}mph</li>
+  <li>
+    Passengers:
+    <ol>
+      {{#each model.passengers as |passenger|}}
+        <li>
+          {{passenger.name}}
+        </li>
+      {{/each}}
+    </ol>
+  </li>
+</ul>
